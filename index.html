@@ -50,8 +50,8 @@
     </script>
   </head>
   <body class="font-lexden">
-    <header>
-      <nav class="pb-16">
+    <header class="bg-gray-100 fixed w-full">
+      <nav class="pb-8">
         <div class="flex justify-between items-center w-[80%] mx-auto pt-8">
           <button
             class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
@@ -69,14 +69,12 @@
           <div class="flex items-center gap-3">
             <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
             <h3 class="capitalize text-primary text-xl font-semibold">
-              <span id="your-money">5500 </span>BDT
+              <span id="your-money">5500</span> BDT
             </h3>
           </div>
         </div>
       </nav>
-    </header>
-    <main class="bg-white">
-      <section class="pt-20 text-center space-x-5">
+      <section class="pt-8 pb-8 text-center space-x-5 bg-white border-b-[1px]">
         <button
           class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
         >
@@ -88,10 +86,11 @@
           history
         </button>
       </section>
-
+    </header>
+    <main class="bg-white pt-[250px]">
       <section>
         <!-- card 1 -->
-        <section class="w-[70%] mx-auto mb-8 mt-8">
+        <section class="w-[70%] mx-auto mb-8 pt-4">
           <div
             class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl"
           >
@@ -100,10 +99,12 @@
             </div>
             <div>
               <div>
-                <div class="flex items-center gap-3">
-                  <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
-                  <h3 class="capitalize text-primary text-xl font-semibold">
-                    <span id="noakhali-total-donation">5500 </span>BDT
+                <div
+                  class="flex items-center gap-3 border w-[170px] p-4 text-base rounded-lg bg-[rgba(17,17,17,0.05)]"
+                >
+                  <i class="fa-brands fa-bitcoin text-orange-500"></i>
+                  <h3 class="capitalize text-primary">
+                    <span id="noakhali-total-donation">5500</span> BDT
                   </h3>
                 </div>
                 <h1 class="capitalize text-xl text-primary font-bold my-4">
@@ -145,14 +146,16 @@
             </div>
             <div>
               <div>
-                <div class="flex items-center gap-3">
-                  <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
-                  <h3 class="capitalize text-primary text-xl font-semibold">
-                    <span>5500 </span>BDT
+                <div
+                  class="flex items-center gap-3 border w-[170px] p-4 text-base rounded-lg bg-[rgba(17,17,17,0.05)]"
+                >
+                  <i class="fa-brands fa-bitcoin text-orange-500"></i>
+                  <h3 class="capitalize text-primary">
+                    <span id="quota-total-donation">5500</span> BDT
                   </h3>
                 </div>
                 <h1 class="capitalize text-xl text-primary font-bold my-4">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Aid for Injured in the Quota Movement
                 </h1>
                 <p class="text-secondery mb-6">
                   The recent floods in Noakhali have caused significant damage
@@ -164,13 +167,14 @@
                 </p>
                 <div class="grid">
                   <input
+                    id="quota-donation"
                     type="text"
                     placeholder="write donation amount"
                     class="p-5 rounded-xl mb-4"
                   />
                   <button
+                    id="quota-btn"
                     class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
-                    onclick="my_modal_1.showModal()"
                   >
                     donate now
                   </button>
@@ -189,30 +193,36 @@
             </div>
             <div>
               <div>
-                <div class="flex items-center gap-3">
-                  <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
-                  <h3 class="capitalize text-primary text-xl font-semibold">
-                    <span>5500 </span>BDT
+                <div
+                  class="flex items-center gap-3 border w-[170px] p-4 text-base rounded-lg bg-[rgba(17,17,17,0.05)]"
+                >
+                  <i class="fa-brands fa-bitcoin text-orange-500"></i>
+                  <h3 class="capitalize text-primary">
+                    <span id="feni-total-donation">5500</span> BDT
                   </h3>
                 </div>
                 <h1 class="capitalize text-xl text-primary font-bold my-4">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Donate for Flood Relief in Feni,Bangladesh
                 </h1>
                 <p class="text-secondery mb-6">
-                  The recent floods in Noakhali have caused significant damage
-                  to homes infrastructure. Your donation will help provide
-                  essential supplies and to those affected by this disaster.
-                  Every contribution, big or small, makes difference. Please
-                  join us in supporting the relief efforts and making a positive
-                  impact on the lives of those in need.
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
                 </p>
                 <div class="grid">
                   <input
+                    id="feni-donation"
                     type="text"
                     placeholder="write donation amount"
                     class="p-5 rounded-xl mb-4"
                   />
                   <button
+                    id="feni-btn"
                     class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
                     onclick="my_modal_1.showModal()"
                   >
