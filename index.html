@@ -53,11 +53,11 @@
     <header class="">
 
       <div class="">
-        <nav class="flex justify-between items-center w-[80%] mx-auto sticky top-0 pt-8">
+        <nav class="flex justify-between items-center w-[80%] mx-auto pt-8">
           <button
             class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
           >
-            blog
+            <a href="/blog.html">blog</a>
           </button>
           <div class="flex items-center gap-3">
             <i
@@ -95,7 +95,7 @@
       <div class="">
         <!-- card 1 -->
         <section class="w-[70%] mx-auto mb-8">
-          <div class="grid grid-cols-2 items-center border-2 p-8 rounded-2xl">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl">
             <div>
               <img src="./assets/noakhali.png" alt="" srcset="" />
             </div>
@@ -125,7 +125,7 @@
                     class="p-5 rounded-xl mb-4"
                   />
                   <button
-                    class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
+                    class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer" onclick="my_modal_1.showModal()"
                   >
                     donate now
                   </button>
@@ -136,7 +136,7 @@
         </section>
         <!-- card 2 -->
         <section class="w-[70%] mx-auto mb-8">
-          <div class="grid grid-cols-2 items-center border-2 p-8 rounded-2xl">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl">
             <div>
               <img src="./assets/quota-protest.png" alt="" srcset="" />
             </div>
@@ -166,7 +166,7 @@
                     class="p-5 rounded-xl mb-4"
                   />
                   <button
-                    class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
+                    class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer" onclick="my_modal_1.showModal()"
                   >
                     donate now
                   </button>
@@ -177,7 +177,7 @@
         </section>
         <!-- card 3 -->
         <section class="w-[70%] mx-auto">
-          <div class="grid grid-cols-2 items-center border-2 p-8 rounded-2xl">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl">
             <div>
               <img src="./assets/feni.png" alt="" srcset="" />
             </div>
@@ -207,7 +207,7 @@
                     class="p-5 rounded-xl mb-4"
                   />
                   <button
-                    class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
+                    class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer" onclick="my_modal_1.showModal()"
                   >
                     donate now
                   </button>
@@ -225,7 +225,27 @@
             Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
           </p>
         </div>
-      </section>
+      <!-- modal section start  -->
+<!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-center text-3xl text-primary mb-6">Congrates!</h3>
+    <div class="w-full flex justify-center">
+      <img src="/assets/coin.png" alt="" srcset="">
+    </div>
+    <p class="py-4 text-center text-secondery capitalize">you have donated for humankind</p>
+    <h3 class="font-bold text-center text-xl text-primary">Successfully</h3>
+    <div class="modal-action  block text-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn rounded-lg">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+      
+</section>
+      
     </main>
     <footer class="flex items-center justify-center h-36 bg-[rgba(255,255,255,0)]">
       <p>All Right Reseved to Hello_Tourist</p>

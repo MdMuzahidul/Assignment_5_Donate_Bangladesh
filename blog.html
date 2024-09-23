@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- lexden font cdn -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawasome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind css & daisyUI cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#111111",
+              secondery: "rgba(17,17,17,0.7)",
+              btnColor: "#B4F461",
+            },
+            fontFamily: {
+              lexden: "Lexend",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-lexden">
+    <header>
+      <nav class="flex justify-between items-center w-[80%] mx-auto pt-8 pb-12">
+        <button
+          class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
+        >
+          <a href="/index.html">home</a>
+        </button>
+        <div class="flex items-center gap-3">
+          <i
+            class="fa-solid fa-hand-holding-dollar text-3xl text-orange-500"
+          ></i>
+          <h3 class="capitalize text-primary text-xl font-semibold">
+            donate Bangladesh
+          </h3>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
+          <h3 class="capitalize text-primary text-xl font-semibold">
+            <span>5500 </span>BDT
+          </h3>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-white">
+      <section class="w-[80%] mx-auto py-10 lg:py-20">
+        <h1 class="text-4xl font-bold mb-10">   
+          Important FAQ<i class="fa-regular fa-circle-question"></i>
+        </h1>
+        <div class="join join-vertical w-full rounded-lg">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium capitalize">
+              what is the document object model(DOM)?
+            </div>
+            <div class="collapse-content w-[90%]">
+              <p>
+                The Document Object Model (DOM) is a programming interface that
+                represents an HTML or XML document as a structured tree of
+                objects. It allows languages like JavaScript to manipulate the
+                document's content, structure, and styles dynamically, enabling
+                interactive web applications without reloading the entire page.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium capitalize">
+              how do you select an element from the DOM?
+            </div>
+            <div class="collapse-content w-[90%]">
+              <p>
+                To select an element from the DOM, you can use JavaScript
+                methods like document.getElementById(),
+                document.querySelector(), or document.getElementsByClassName().
+                These allow you to target elements by their ID, class, tag, or
+                CSS selector, enabling manipulation of content, styles, or
+                attributes.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium capitalize">
+              what is event delegation in the context of the DOM,and why it is
+              useful?
+            </div>
+            <div class="collapse-content w-[90%]">
+              <p>
+                Event delegation is a technique in the DOM where a single event
+                listener is added to a parent element instead of individual
+                child elements. It takes advantage of event bubbling, where
+                events triggered on child elements propagate up to their parent.
+                This is useful because it reduces memory usage, simplifies code,
+                and allows for dynamically added child elements to be handled
+                without needing to attach new event listeners to each one.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium capitalize">
+              how do you manipulate an element's attributes and styles using DOM
+              ?
+            </div>
+            <div class="collapse-content w-[90%]">
+              <p>
+                To manipulate an element's attributes and styles using the DOM,
+                JavaScript provides various methods. For attributes, you can use
+                setAttribute() to add or modify attributes like src, href, or
+                alt. For example, element.setAttribute('src', 'image.jpg')
+                changes the src of an image. Alternatively, you can directly
+                modify attributes: element.href = 'https://example.com'. For
+                styles, the style property allows inline CSS changes:
+                element.style.color = 'blue'; or element.style.fontSize =
+                '20px';. To apply multiple styles or manage design efficiently,
+                you can toggle classes with classList.add(), remove(), or
+                toggle(), allowing dynamic styling.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium capitalize">
+              How do you add a click event to a button using JavaScript in the
+              DOM?
+            </div>
+            <div class="collapse-content w-[90%]">
+              <p>
+                To add a click event to a button in the DOM, use JavaScript's
+                addEventListener(). This method attaches a function to execute
+                when the button is clicked. For example,
+                button.addEventListener('click', function() {...}); allows
+                dynamic interaction, enabling actions like displaying alerts or
+                modifying content on button clicks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="w-[80%] mx-auto flex items-center justify-center h-36 bg-[rgba(255,255,255,0)]"
+    >
+      <p>All Right Reseved to Hello_Tourist</p>
+    </footer>
+  </body>
+</html>
