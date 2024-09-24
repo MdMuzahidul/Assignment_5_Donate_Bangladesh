@@ -53,7 +53,7 @@
     <header>
       <nav class="flex justify-between items-center w-[80%] mx-auto pt-8 pb-12">
         <button
-          class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
+          class="py-2 lg:py-3 px-3 lg:px-8 border bg-btnColor rounded-lg lg:text-xl font-semibold capitalize text-primary cursor-pointer"
         >
           <a href="index.html">home</a>
         </button>
@@ -61,23 +61,28 @@
           <i
             class="fa-solid fa-hand-holding-dollar text-3xl text-orange-500"
           ></i>
-          <h3 class="capitalize text-primary text-xl font-semibold">
+          <h3
+            class="hidden lg:block capitalize text-primary text-xl font-semibold"
+          >
             donate Bangladesh
           </h3>
         </div>
         <div class="flex items-center gap-3">
-          <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
-          <h3 class="capitalize text-primary text-xl font-semibold">
+          <i
+            class="fa-brands fa-bitcoin text-xl lg:text-3xl text-orange-500"
+          ></i>
+          <h3 class="capitalize text-secondery lg:text-xl font-semibold">
             <span>5500 </span>BDT
           </h3>
         </div>
       </nav>
     </header>
     <main class="bg-white">
-      <section class="w-[80%] mx-auto py-10 lg:py-20">
-        <h1 class="text-4xl font-bold mb-10 gap-2">
-          Important FAQ<i class="fa-regular fa-circle-question"></i>
-        </h1>
+      <section class="w-[90%] lg:w-[80%] mx-auto py-10 lg:py-20">
+        <div class="flex items-center gap-4 mb-8">
+          <h1 class="text-3xl lg:text-4xl font-bold">Important FAQ</h1>
+          <i class="fa-regular fa-circle-question text-3xl lg:text-4xl "></i>
+        </div>
         <div class="join join-vertical w-full rounded-lg">
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" checked="checked" />
@@ -147,23 +152,6 @@
                 '20px';. To apply multiple styles or manage design efficiently,
                 you can toggle classes with classList.add(), remove(), or
                 toggle(), allowing dynamic styling.
-              </p>
-            </div>
-          </div>
-          <div class="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="my-accordion-4" checked="checked" />
-            <div class="collapse-title text-xl font-medium capitalize">
-              How do you add a click event to a button using JavaScript in the
-              DOM?
-            </div>
-            <div class="collapse-content w-[90%]">
-              <p>
-                To add a click event to a button in the DOM, use JavaScript's
-                addEventListener(). This method attaches a function to execute
-                when the button is clicked. For example,
-                button.addEventListener('click', function() {...}); allows
-                dynamic interaction, enabling actions like displaying alerts or
-                modifying content on button clicks.
               </p>
             </div>
           </div>

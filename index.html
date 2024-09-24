@@ -55,7 +55,7 @@
         <div class="flex justify-between items-center w-[80%] mx-auto pt-8">
           <button
             id="blog"
-            class="py-3 px-8 border bg-btnColor rounded-lg text-xl font-semibold capitalize text-primary cursor-pointer"
+            class="py-2 lg:py-3 px-3 lg:px-8 border bg-btnColor rounded-lg lg:text-xl font-semibold capitalize text-primary cursor-pointer"
           >
             <a href="./blog.html">blog</a>
           </button>
@@ -63,13 +63,17 @@
             <i
               class="fa-solid fa-hand-holding-dollar text-3xl text-orange-500"
             ></i>
-            <h3 class="capitalize text-primary text-xl font-semibold">
+            <h3
+              class="hidden lg:block capitalize text-primary text-xl font-semibold"
+            >
               donate Bangladesh
             </h3>
           </div>
           <div class="flex items-center gap-3">
-            <i class="fa-brands fa-bitcoin text-3xl text-orange-500"></i>
-            <h3 class="capitalize text-secondery text-xl font-semibold">
+            <i
+              class="fa-brands fa-bitcoin text-xl lg:text-3xl text-orange-500"
+            ></i>
+            <h3 class="capitalize text-secondery lg:text-xl font-semibold">
               <span id="your-money">5500</span> BDT
             </h3>
           </div>
@@ -93,10 +97,10 @@
         </button>
       </section>
     </header>
-    <main class="bg-white pt-[250px]">
+    <main class="bg-white pt-[250px] pb-8">
       <section id="donation-box">
         <!-- card 1 -->
-        <section class="w-[70%] mx-auto mb-8 pt-4">
+        <section class="w-[90%] lg:w-[70%] mx-auto mb-8 pt-4">
           <div
             class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl"
           >
@@ -143,7 +147,7 @@
           </div>
         </section>
         <!-- card 2 -->
-        <section class="w-[70%] mx-auto mb-8">
+        <section class="w-[90%] lg:w-[70%] mx-auto mb-8">
           <div
             class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl"
           >
@@ -190,7 +194,7 @@
           </div>
         </section>
         <!-- card 3 -->
-        <section class="w-[70%] mx-auto">
+        <section class="w-[90%] lg:w-[70%] mx-auto">
           <div
             class="grid grid-cols-1 gap-8 lg:grid-cols-2 items-center border-2 p-8 rounded-2xl"
           >
@@ -267,9 +271,10 @@
       <!-- history section start -->
       <section
         id="history-box"
-        class="w-[80%] mx-auto mt-4 pb-8 hidden"
+        class="w-[90%] lg:w-[80%] mx-auto mt-4 pb-8 hidden"
       ></section>
     </main>
+    <footer class="h-12"></footer>
     <script src="./script/app.js"></script>
     <script src="./script/getElementById.js"></script>
     <script src="./script/getElementByIdInput.js"></script>
