@@ -21,6 +21,26 @@ document.getElementById("noakhali-btn").addEventListener("click", function () {
       newNoakhaliTotalDonation;
     document.getElementById("noakhali-donation").value = "";
     document.getElementById("my_modal_1").showModal();
+    // set history
+    const historyBox = document.getElementById("history-box");
+    const div = document.createElement("div");
+    const p = document.createElement("p");
+    p.innerHTML = `${noakhaliDonation} Taka is Donated for Flood Relief in Feni,Bangladesh `;
+    p.style.color = "#111111";
+    p.style.fontSize = "1.25rem";
+    p.style.fontWeight = "bold";
+    div.appendChild(p);
+    const d = document.createElement("p");
+    d.innerHTML = "Date: " + new Date();
+    d.style.color = "rgba(17,17,17,0.7)";
+    d.style.fontWeight = "light";
+    d.style.fontSize = "1rem";
+    div.appendChild(d);
+    div.style.padding = "32px";
+    div.style.border = "1px solid black";
+    div.style.borderRadius = "16px";
+    div.style.marginTop = "2rem";
+    historyBox.appendChild(div);
   }
 });
 
