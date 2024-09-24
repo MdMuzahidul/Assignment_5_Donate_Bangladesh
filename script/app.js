@@ -2,6 +2,11 @@
 //   const newScroll = document.getElementById("scroll");
 //   newScroll.style.background = "rgb(0 0 0 / 50%)";
 // });
+
+// document.getElementById("blog").addEventListener("click", function () {
+//   window.navigator("blog.html");
+// });
+
 // donation btn
 document.getElementById("donation").addEventListener("click", function () {
   const newHistroyBox = document.getElementById("history-box");
